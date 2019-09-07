@@ -1,0 +1,51 @@
+body {
+    background: #ADD8E6;
+  }
+  
+  .container.main {
+      margin-top: 6.0em;
+  }
+
+  h1 {
+      padding-left: 245px;
+  }
+
+  h2 {
+      padding-left: 200px;
+  }
+  
+  .font {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px; 
+    margin-top: -5.5px;
+  }
+
+  .photo {
+    padding-left: 100px;
+  }
+
+  .contact {
+    padding-left: 125px;
+  }
+
+.info {
+    margin-top: 60px;
+}
+
+.menu {
+    padding-left: 525px;
+}
+
+.bot {
+    margin-bottom: 12px;
+}
+
+h3 {
+    margin-top: 0px;
+    padding-left: 250px;
+}
+
+.btn {
+    text-align: center;
+}
+
