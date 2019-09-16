@@ -7,11 +7,11 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.get('/', (req, res) => {
-	res.render("./routes/index");
+	res.render("routes/index");
 });
 
 app.get("/contact", (req, res) => {
-	res.render("./routes/contact");
+	res.render("routes/contact");
 });
 
 app.listen(process.env.PORT || 3000)
