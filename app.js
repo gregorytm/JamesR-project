@@ -3,15 +3,16 @@ const express = require("express"),
 
 
 app.set("view engine", "ejs");
+app.set("views", _dirname + "/routes");
 app.use(express.static(__dirname + "/public"));
 
 
 app.get('/', (req, res) => {
-	res.render("routes/index");
+	res.render("index");
 });
 
 app.get("/contact", (req, res) => {
-	res.render("routes/contact");
+	res.render("contact");
 });
 
 app.listen(process.env.PORT || 3000)
