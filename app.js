@@ -15,8 +15,11 @@ app.get("/contact", (req, res) => {
 	res.render("contact");
 });
 
-// app.listen(process.env.PORT || 3000)
+const port = process.env.PORT ? Number.parseInt(process.env.PORT) : 3000
+app.listen(port, () => {
+  console.log("server listening on port 3000");
+})
 
-app.listen(3000, () =>{
-	console.log("server listening on port 3000");
-});
+// app.listen(3000, () =>{
+// 	console.log("server listening on port 3000");
+// });
