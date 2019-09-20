@@ -3,9 +3,8 @@ const express = require("express"),
 
 
 app.set("view engine", "ejs");
-
 app.set("views", __dirname + "/routes");
-
+app.use(express.static(__dirname + "/public"));
 
 
 app.get('/', (req, res) => {
