@@ -8,11 +8,11 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.get('/', (req, res) => {
-	res.render("index");
+	res.render("contact");
 });
 
 app.get("/contact", (req, res) => {
-	res.render("contact");
+	res.render("index");
 });
 
 const port = process.env.PORT ? Number.parseInt(process.env.PORT) : 3000
